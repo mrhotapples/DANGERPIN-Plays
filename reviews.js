@@ -4,7 +4,7 @@ const reviews = [
     platform: "PC",
     genre: "Action RPG",
     score: 9,
-    image: "Elden Ring.webp",
+    image: "ER Logo.png",
     summary: "Dying never felt so empowering. Elden Ring is the real deal.",
     url: "review-elden_ring.html"
   }

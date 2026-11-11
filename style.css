@@ -43,6 +43,14 @@ header {
   text-align: center;
 }
 
+nav-logo {
+  display: block;
+  width: auto;
+  max-width: 600px;
+  height: auto;
+  margin: 1.5rem auto;
+}
+
 header h1 {
   margin: 0 0 0.5rem;
   font-size: 2.6rem;
