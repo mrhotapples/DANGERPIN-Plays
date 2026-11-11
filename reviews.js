@@ -3,12 +3,21 @@ const reviews = [
     title: "Elden Ring",
     platform: "PC",
     genre: "Action RPG",
-    score: 9,
+    score: 9.5,
     image: "ER Logo.png",
     summary: "Dying never felt so empowering. Elden Ring is the real deal.",
     url: "review-elden_ring.html"
   }
-  // , { ...next review goes here, separated by a comma }
+  ,
+  {
+    title: "Control",
+    platform: "PC",
+    genre: "Third-person Action",
+    score: 8,
+    image: "Control logo.jpg",
+    summary: "Take. CONTROL. Toss a bench at someone. It's fun!",
+    url: "review-control.html"
+  }
 ];
 
 function renderReviews() {
@@ -16,7 +25,7 @@ function renderReviews() {
   if (!container) return;
 
   // data-limit=" " how many reviews to show
-  const limit = parseInt(container.dataset.limit, 10) || reviews.length;
+  const limit = parseInt(container.dataset.limit, 5) || reviews.length;
 
   container.innerHTML = reviews
     .slice(0, limit)
