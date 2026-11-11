@@ -1,0 +1,284 @@
+/* Whole site*/
+:root {
+  --bg: #f4f6fb;
+  --card: #ffffff;
+  --text: #2b2d42;
+  --accent: #4f58cf;
+  --accent-dark: #3f37a0;
+  --muted: #6c7089;
+}
+
+/* Page layout */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+section {
+  background-color: var(--card);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Header and nav */
+header {
+  background-color: var(--accent);
+  color: white;
+  padding: 2rem 1.5rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2.6rem;
+  letter-spacing: 1px;
+}
+
+header p {
+  margin: 0 0 1rem;
+  font-weight: 300;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: var(--accent-dark);
+}
+
+/* Headings and paragraphs */
+h2 {
+  color: var(--accent-dark);
+  font-size: 1.8rem;
+  margin-top: 0;
+  border-bottom: 3px solid var(--accent);
+  display: inline-block;
+  padding-bottom: 0.2rem;
+}
+
+p {
+  font-size: 1.05rem;
+  margin-bottom: 1.2rem;
+}
+
+/* Images */
+.featured-image {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 1.5rem auto;
+  border: 4px solid var(--accent);
+  border-radius: 12px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--text);
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background-color: var(--accent);
+  color: white;
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: var(--accent-dark);
+}
+
+/* Reviews card */
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg);
+  border: 1px solid #e0e3ef;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.review-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.review-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.review-card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1rem;
+}
+
+.review-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.review-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.review-meta {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin: 0.25rem 0 0.5rem;
+}
+
+.review-card .summary {
+  flex: 1;
+  font-size: 0.95rem;
+}
+
+.score-badge {
+  background-color: var(--accent);
+  color: white;
+  font-weight: 600;
+  padding: 0.25rem 0.7rem;
+  border-radius: 8px;
+}
+
+/* ===== Review page */
+.review-hero {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.review-hero img {
+  width: 280px;
+  height: auto;
+  border: 4px solid var(--accent);
+  border-radius: 12px;
+}
+
+.review-info {
+  flex: 1;
+}
+
+.facts {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+}
+
+.score {
+  display: inline-block;
+  background-color: var(--accent);
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding: 0.3rem 1.2rem;
+  border-radius: 12px;
+}
+
+.score span {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.pros-cons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.pros h3 {
+  color: #2a9d5c;
+  margin-top: 0;
+}
+
+.cons h3 {
+  color: #d64545;
+  margin-top: 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.9rem;
+  }
+
+  section {
+    padding: 1.2rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .review-hero {
+    flex-direction: column;
+  }
+
+  .review-hero img {
+    width: 100%;
+  }
+
+  .pros-cons {
+    grid-template-columns: 1fr;
+  }
+}
