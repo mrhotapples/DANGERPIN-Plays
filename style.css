@@ -44,7 +44,7 @@ header {
 }
 
 nav-logo {
-  display: block;
+  display: inline;
   width: 10%;
   max-width: 300px;
   height: auto;
