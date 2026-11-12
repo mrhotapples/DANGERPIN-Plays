@@ -18,6 +18,26 @@ const reviews = [
     summary: "Take. CONTROL. Toss a bench at someone. It's fun!",
     url: "review-control.html"
   }
+  ,
+  {
+    title: "Resident Evil: Requiem",
+    platform: "PC",
+    genre: "Survival Horror",
+    score: 8,
+    image: "RE9 Cover Art.jpg",
+    summary: "The best of both worlds, for better or for worse.",
+    url: "review-RE9.html"
+  }
+  ,
+  {
+    title: "Dark Souls",
+    platform: "PC",
+    genre: "Action RPG",
+    score: 8,
+    image: "Dark Souls Box Art.jfif",
+    summary: "Hand it over, that thing, your dark soul...",
+    url: "review-dark_souls.html"
+  }
 ];
 
 function renderReviews() {
@@ -32,7 +52,7 @@ function renderReviews() {
     .map(function (r) {
       return `
         <article class="review-card">
-          <img src="${r.image}" alt="${r.title} cover art">
+          <a href="${r.url}"><img src="${r.image}" alt="${r.title} cover art"></a>
           <div class="review-card-body">
             <div class="review-card-top">
               <h3>${r.title}</h3>
