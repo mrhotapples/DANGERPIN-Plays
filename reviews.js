@@ -38,6 +38,16 @@ const reviews = [
     summary: "Hand it over, that thing, your dark soul...",
     url: "review-dark_souls.html"
   }
+  ,
+  {
+    title: "Zelda: Ocarina of Time (2026)",
+    platform: "PC",
+    genre: "Third-person Action Adventure",
+    score: 10,
+    image: "oot_remake_cover_art.jpg",
+    summary: "The most significant moment in gaming happened - again.",
+    url: "review-oot_remake.html"
+  }
 ];
 
 function renderReviews() {
