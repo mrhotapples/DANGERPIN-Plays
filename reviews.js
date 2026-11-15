@@ -45,7 +45,7 @@ function renderReviews() {
   if (!container) return;
 
   // data-limit=" " how many reviews to show
-  const limit = parseInt(container.dataset.limit, 5) || reviews.length;
+  const limit = parseInt(container.dataset.limit, 10) || reviews.length;
 
   container.innerHTML = reviews
     .slice(0, limit)
