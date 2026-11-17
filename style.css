@@ -203,7 +203,60 @@ footer {
   border-radius: 8px;
 }
 
-/* ===== Review page */
+/* Sort controls */
+.sort-controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1rem 0 0;
+}
+
+.sort-controls label {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.sort-controls select,
+.sort-controls button {
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.sort-controls select {
+  background-color: var(--card);
+  color: var(--text);
+  border: 2px solid #e0e3ef;
+}
+
+.sort-controls select:hover {
+  border-color: var(--accent);
+}
+
+.sort-controls button {
+  background-color: transparent;
+  color: var(--accent);
+  border: 2px solid var(--accent);
+}
+
+.sort-controls button:hover {
+  background-color: var(--accent);
+  color: white;
+}
+
+.sort-controls select:focus-visible,
+.sort-controls button:focus-visible {
+  outline: 3px solid var(--accent-dark);
+  outline-offset: 2px;
+}
+
+/* Review page */
 .review-hero {
   display: flex;
   gap: 2rem;
@@ -258,7 +311,7 @@ footer {
   margin-top: 0;
 }
 
-/* Responsive */
+/* Responsive features */
 @media (max-width: 600px) {
   header h1 {
     font-size: 1.9rem;
@@ -276,6 +329,10 @@ footer {
   nav a {
     width: 100%;
     text-align: center;
+  }
+
+  .sort-controls {
+    justify-content: center;
   }
 
   .review-hero {
