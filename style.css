@@ -43,7 +43,7 @@ header {
   text-align: center;
 }
 
-nav-logo {
+.nav-logo {
   display: block;
   width: 100%;
   max-width: 600px;
@@ -332,7 +332,8 @@ footer {
   }
 
   .sort-controls {
-    justify-content: center;
+    flex-direction: column;
+    align-items: stretch;
   }
 
   .review-hero {
