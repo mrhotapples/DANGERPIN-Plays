@@ -334,6 +334,8 @@ footer {
   .sort-controls {
     flex-direction: column;
     align-items: stretch;
+	text-align: center;
+    text-align-last: center;
   }
 
   .review-hero {
